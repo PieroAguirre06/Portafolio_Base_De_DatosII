@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana · Base de Datos II</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">UPLA · BD II<span>Ing. de Sistemas y Computación</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="sobreMi.html">Sobre mí</a>
+      <a href="unidades.html">Unidades</a>
+      <a href="login.html">Mi cuenta</a>
+      <span class="role-badge" id="roleBadge"></span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  </div>
+</nav>
+
+<section>
+  <div class="container">
+    <p class="eyebrow" style="margin-bottom:18px;">
+      <a href="unidades.html" style="color:var(--gold);">← Volver a Unidades</a>
+    </p>
+
+    <div class="week-header">
+      <div class="week-node" id="weekNode">📄</div>
+      <div class="week-header-text">
+        <span class="unit-tag" id="weekUnitTag">UNIDAD —</span>
+        <h1 id="weekTitle">Cargando…</h1>
+        <p class="week-subtitle" id="weekSubtitle"></p>
+      </div>
+    </div>
+
+    <div class="week-grid">
+      <div class="week-main">
+        <div class="week-card">
+          <h2>📖 Descripción</h2>
+          <p id="weekDescription">—</p>
+        </div>
+        <div class="week-card">
+          <h2>🎯 Temas de la semana</h2>
+          <ul class="week-topics" id="weekTopics"></ul>
+        </div>
+      </div>
+
+      <aside class="week-side">
+        <div class="week-card">
+          <h2>📁 Actividades (<span id="activitiesCount">0</span>)</h2>
+          <div class="activities-list" id="activitiesList"></div>
+        </div>
+
+        <div class="week-card week-pdf-card">
+          <h2 id="pdfName" hidden></h2>
+          <p id="pdfStatus" class="pdf-status">Verificando…</p>
+          <div id="pdfViewer" class="pdf-viewer">
+            <div class="pdf-placeholder">Cargando…</div>
+          </div>
+          <p class="pdf-hint" id="pdfHint"></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><b>Aguirre Osores Piero</b> · Base de Datos II</p>
+    <p>Ingeniería de Sistemas y Computación — Universidad Peruana Los Andes, Huancayo</p>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/script.js"></script>
+<script src="js/materiales.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/semana.js"></script>
+</body>
+</html>

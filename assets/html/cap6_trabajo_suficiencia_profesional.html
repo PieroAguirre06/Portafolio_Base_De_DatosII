@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capítulo VI — Trabajo de Suficiencia Profesional (Dota 2)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a24d;--gold-br:#f3d789;--ink:#eee7d6;--dim:#a9a394;--radiant:#3ddc97;--dire:#e6535f;
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+*{box-sizing:border-box;}
+body{margin:0;background:#07080a;font-family:'Spectral',serif;color:var(--ink);}
+h1,h2,h3,.eyebrow{font-family:'Cinzel',serif;}
+.poster{position:relative;max-width:1000px;margin:26px auto;border:2px solid #3a2f18;border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px #000,0 30px 80px rgba(0,0,0,.6);}
+.backdrop{position:relative;padding:34px 34px 22px;background:radial-gradient(700px 340px at 18% -10%,rgba(61,220,151,.14),transparent 60%),radial-gradient(700px 340px at 85% 0%,rgba(230,83,95,.16),transparent 60%),linear-gradient(180deg,#0b0f14 0%,#0a0c10 55%,#07080a 100%);border-bottom:1px solid #241c0e;}
+.silhouette{position:absolute;inset:0;pointer-events:none;opacity:.9;background:linear-gradient(180deg,transparent 55%,#05060700 100%),conic-gradient(from 210deg at 8% 92%,#05070900 0deg,#10141c 25deg,#05070900 60deg),conic-gradient(from 150deg at 94% 90%,#05070900 0deg,#170c0f 25deg,#05070900 60deg);}
+.ancient{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:120px;height:150px;opacity:.85;}
+.ancient svg{width:100%;height:100%;}
+.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--gold-br);text-transform:uppercase;position:relative;z-index:1;}
+.title-row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;position:relative;z-index:1;margin-top:4px;}
+.title-row h1{font-size:clamp(24px,4vw,38px);margin:2px 0 6px;color:#fff;letter-spacing:.01em;text-shadow:0 2px 18px rgba(0,0,0,.7);}
+.title-row .sub{font-size:13px;color:var(--gold-br);letter-spacing:.05em;}
+.quote{max-width:280px;text-align:right;font-style:italic;font-size:13px;color:var(--dim);}
+.quote .rune{color:var(--gold);font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;display:block;margin-top:6px;}
+.lede{position:relative;z-index:1;max-width:64ch;margin-top:14px;font-size:14px;color:#cfcabd;}
+.body{padding:24px 28px 28px;background:linear-gradient(180deg,#0d0f13,#0a0b0e);}
+.section-label{color:var(--gold-br);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin:20px 0 8px;padding-bottom:5px;border-bottom:1px dashed #2a2513;}
+.section-label:first-child{margin-top:0;}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:820px){.cols2{grid-template-columns:1fr;}}
+.panel{border:1px solid #2a2416;background:#12140f22;border-radius:5px;overflow:hidden;}
+.panel-head{display:flex;align-items:center;gap:8px;padding:9px 13px;background:linear-gradient(90deg,#1c1710,#0f0d09);border-bottom:1px solid var(--gold);}
+.panel-head .ic{width:18px;height:18px;flex:none;border-radius:3px;background:linear-gradient(180deg,var(--gold-br),var(--gold));}
+.panel-head h3{margin:0;font-size:12px;letter-spacing:.05em;color:var(--gold-br);text-transform:uppercase;}
+.panel.dire .panel-head{border-bottom-color:var(--dire);}
+.panel.dire .panel-head .ic{background:linear-gradient(180deg,#ff9aa2,var(--dire));}
+.panel.radiant .panel-head{border-bottom-color:var(--radiant);}
+.panel.radiant .panel-head .ic{background:linear-gradient(180deg,#a9f5da,var(--radiant));}
+.panel-body{padding:11px 13px 13px;}
+.item{font-size:12.4px;color:#d8d2c2;padding:5px 0;border-bottom:1px dashed #24201555;}
+.item:last-child{border-bottom:none;}
+.quest{list-style:none;margin:0;padding:0 0 0 4px;border-left:2px solid #3a3120;}
+.quest li{position:relative;padding:0 0 11px 18px;font-size:12.2px;color:#d8d2c2;}
+.quest li:last-child{padding-bottom:0;}
+.quest li::before{content:attr(data-i);position:absolute;left:-11px;top:0;width:20px;height:20px;border-radius:50%;background:#161209;border:1px solid var(--gold);color:var(--gold-br);font-family:'Cinzel',serif;font-size:9.5px;display:flex;align-items:center;justify-content:center;}
+.quest b{display:block;color:#ecdfb8;font-size:12.8px;margin-bottom:1px;}
+.timer{display:inline-block;margin-left:6px;font-family:'Cinzel',serif;font-size:9px;color:#f0d999;background:#2a2410;border:1px solid #6b5726;padding:1px 6px;border-radius:2px;}
+table.rank{width:100%;border-collapse:collapse;font-size:12.6px;margin-top:4px;}
+table.rank th{text-align:left;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.04em;color:var(--gold-br);border-bottom:1px solid var(--gold);padding:6px 8px;}
+table.rank td{padding:6px 8px;border-bottom:1px solid #211c10;}
+table.rank tr.win td:first-child{color:var(--radiant);font-weight:600;}
+table.rank tr.lose td{color:#ff8b93;}
+.note{margin-top:10px;padding:9px 11px;border-left:3px solid var(--gold);background:#1e1a10aa;font-size:12px;color:#e8dcc0;border-radius:0 3px 3px 0;}
+.flow{padding:10px 0;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;}
+.node{text-align:center;font-size:11.5px;padding:7px 9px;border:1px solid #3a3120;border-radius:4px;background:#161209;color:#e6dcc0;}
+.node.hi{border-color:var(--gold);color:var(--gold-br);background:#221b0b;}
+.dn{color:var(--gold);font-size:12px;}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;}
+@media(max-width:820px){.row3{grid-template-columns:1fr;}}
+.mini{border:1px solid #241f13;border-radius:5px;padding:12px;background:#0f0e0b;}
+.mini h4{margin:0 0 5px;font-size:11px;letter-spacing:.05em;color:var(--gold-br);text-transform:uppercase;font-family:'Cinzel',serif;}
+.mini p{margin:0;font-size:12.3px;color:#c8c2b2;}
+.tagline{margin-top:20px;text-align:center;padding:10px;border-top:1px solid #2a2513;font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:.2em;color:var(--gold-br);text-transform:uppercase;}
+footer{max-width:1000px;margin:0 auto 40px;padding:0 16px;color:#6b6659;font-size:11.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="backdrop">
+    <div class="silhouette"></div>
+    <div class="ancient"><svg viewBox="0 0 120 150"><polygon points="60,10 78,55 60,50 42,55" fill="#32131a"/><polygon points="60,45 90,150 30,150" fill="#1f0d12"/><polygon points="60,45 90,150 60,150" fill="#1a0a0f"/></svg></div>
+    <div class="eyebrow">Reglamento de Grados y Títulos · UPLA — Edición Ancient</div>
+    <div class="title-row">
+      <div><h1>CAPÍTULO VI<br>TRABAJO DE SUFICIENCIA PROFESIONAL</h1><div class="sub">EL VETERANO QUE FARMEÓ EXPERIENCIA REAL</div></div>
+      <div class="quote">"Años de partidas jugadas también cuentan como build."<span class="rune">— Art. 47° al 65°</span></div>
+    </div>
+    <p class="lede">La modalidad para quienes ya acumularon experiencia laboral en el campo: en vez de tesis, se sustenta un informe de trabajo de suficiencia profesional.</p>
+  </div>
+  <div class="body">
+    <div class="cols2">
+      <div class="panel"><div class="panel-head"><div class="ic"></div><h3>Alcance · Art. 47°-48°</h3></div><div class="panel-body">
+        <div class="item">Titulación mediante sustentación de un informe de trabajo de suficiencia profesional.</div>
+        <div class="item">Aplicable a todas las facultades, excepto Medicina Humana.</div>
+      </div></div>
+      <div class="panel dire"><div class="panel-head"><div class="ic"></div><h3>Requisitos del asesor · Art. 49°</h3></div><div class="panel-body">
+        <div class="item">Pago 40% o monto total por título.</div>
+        <div class="item">FUT dirigido al Decano.</div>
+        <div class="item">Certificado de trabajo: mínimo <b>2 años acumulativos</b> en la especialidad tras el bachillerato.</div>
+        <div class="item">Informe en formato editable.</div>
+      </div></div>
+    </div>
+
+    <div class="section-label">Ruta del procedimiento (Art. 50°–55°)</div>
+    <div class="panel"><div class="panel-body">
+      <ol class="quest">
+        <li data-i="1"><b>Solicitud e inscripción</b>El bachiller solicita asesor e inscribe su trabajo.</li>
+        <li data-i="2"><b>Designación de asesor <span class="timer">≤5 días</span></b>Revisa consistencia <span class="timer">≤15 días</span>.</li>
+        <li data-i="3"><b>Comité de Ética <span class="timer">≤5 días</span></b>Pronunciamiento ético, de corresponder.</li>
+        <li data-i="4"><b>Resolución de aprobación <span class="timer">≤5 días</span></b>Emitida por el Decano.</li>
+        <li data-i="5"><b>Designación de jurados <span class="timer">≤5 días</span></b>Acto resolutivo del Decano.</li>
+        <li data-i="6"><b>Revisión de jurados</b>Dictamen <span class="timer">≤15 días</span>; subsanación <span class="timer">≤30 días</span>; mínimo 2 informes favorables.</li>
+        <li data-i="7"><b>Análisis de similitud</b>Revisión <span class="timer">≤5 días</span>; subsanación <span class="timer">≤15 días</span>; máximo 3 oportunidades.</li>
+        <li data-i="8"><b>Expedito y sustentación <span class="timer">≤2 días</span></b>Acto público ante jurado, preguntas sobre informe y plan de estudios.</li>
+      </ol>
+    </div></div>
+
+    <div class="section-label">Sustentación y calificación (Art. 57°–63°)</div>
+    <div class="cols2">
+      <div class="panel radiant"><div class="panel-body">
+        <div class="item">Duración máxima <b>45 minutos</b>. Jurado presidido por Decano o docente principal; Secretario Docente actúa de secretario.</div>
+        <div class="item">Nota final: <b>promedio</b> entre trabajo y conocimientos. Máximo <b>2 oportunidades</b>; si no aprueba, puede optar por la modalidad de tesis.</div>
+      </div></div>
+      <table class="rank">
+        <tr><th>Calificativo</th><th>Escala</th></tr>
+        <tr class="win"><td>Excelente</td><td>19–20</td></tr>
+        <tr class="win"><td>Muy bueno</td><td>17–18</td></tr>
+        <tr class="win"><td>Bueno</td><td>15–16</td></tr>
+        <tr class="win"><td>Regular</td><td>13–14</td></tr>
+        <tr class="lose"><td>Desaprobado</td><td>&lt;13</td></tr>
+      </table>
+    </div>
+
+    <div class="section-label">Expedición del diploma (Art. 64°)</div>
+    <div class="panel"><div class="flow">
+      <div class="node">Consejo de Facultad</div><div class="dn">→</div>
+      <div class="node">Secretaría General</div><div class="dn">→</div>
+      <div class="node">Consejo Universitario</div><div class="dn">→</div>
+      <div class="node hi">Registro SUNEDU · ≤45 días</div>
+    </div></div>
+
+    <div class="row3">
+      <div class="mini"><h4>Caso de uso</h4><p>Ideal para bachilleres que ya trabajan en su especialidad y prefieren certificar experiencia antes que investigar.</p></div>
+      <div class="mini"><h4>Ejemplo</h4><p>Como el jugador con miles de horas de smurfing: su historial de partidas (experiencia laboral) reemplaza al "draft" de tesis.</p></div>
+      <div class="mini"><h4>Conclusión</h4><p>Una ruta más corta que la tesis, pero exige un mínimo de 2 años de experiencia real comprobada en el campo.</p></div>
+    </div>
+    <div class="tagline">Título por experiencia · Continúa al Capítulo VII</div>
+  </div>
+</div>
+<footer><span><b style="color:var(--gold-br)">Vicerrectorado Académico</b> — Universidad Peruana Los Andes</span><span>Fuente: Reglamento General de Grados y Títulos de Pregrado de la UPLA</span></footer>
+</body>
+</html>

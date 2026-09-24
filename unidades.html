@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidades · Base de Datos II</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">UPLA · BD II<span>Ing. de Sistemas y Computación</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="sobreMi.html">Sobre mí</a>
+      <a href="unidades.html" class="active">Unidades</a>
+      <a href="login.html">Mi cuenta</a>
+      <span class="role-badge" id="roleBadge"></span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  </div>
+</nav>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-editable="units-eyebrow">Árbol de talentos</p>
+      <h2 data-editable="units-title">Unidades del curso</h2>
+      <p data-editable="units-sub" data-editable-multiline="true">El temario de Base de Datos II, ordenado como un árbol de talentos: cada nodo es una unidad que se desbloquea con la anterior.</p>
+    </div>
+
+    <div class="talent-tree">
+      <div class="talent-row">
+        <div class="talent-node">🗺️</div>
+        <div class="talent-card">
+          <span class="unit-tag">UNIDAD I</span>
+          <h3 data-editable="u1-title">Modelo Entidad-Relación</h3>
+          <p data-editable="u1-desc" data-editable-multiline="true">Fundamentos de modelado de datos: entidades, atributos, relaciones y cardinalidad.</p>
+          <ul>
+            <li>Diagramas E-R</li>
+            <li>Claves primarias y foráneas</li>
+            <li>Paso de modelo E-R a modelo relacional</li>
+          </ul>
+          <div class="materials-block">
+            <p class="materials-title">📁 Materiales (PDF)</p>
+            <ul class="materials-list" data-unit="1"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="talent-row">
+        <div class="talent-node">📐</div>
+        <div class="talent-card">
+          <span class="unit-tag">UNIDAD II</span>
+          <h3 data-editable="u2-title">Normalización</h3>
+          <p data-editable="u2-desc" data-editable-multiline="true">Reglas para eliminar redundancia y anomalías en el diseño de tablas.</p>
+          <ul>
+            <li>1FN, 2FN y 3FN</li>
+            <li>Dependencias funcionales</li>
+            <li>Casos prácticos de normalización</li>
+          </ul>
+          <div class="materials-block">
+            <p class="materials-title">📁 Materiales (PDF)</p>
+            <ul class="materials-list" data-unit="2"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="talent-row">
+        <div class="talent-node">🗡️</div>
+        <div class="talent-card">
+          <span class="unit-tag">UNIDAD III</span>
+          <h3 data-editable="u3-title">SQL avanzado</h3>
+          <p data-editable="u3-desc" data-editable-multiline="true">Consultas complejas para explotar la información de una base de datos.</p>
+          <ul>
+            <li>Subconsultas y JOIN avanzados</li>
+            <li>Funciones agregadas y agrupamiento</li>
+            <li>Vistas e índices</li>
+          </ul>
+          <div class="materials-block">
+            <p class="materials-title">📁 Materiales (PDF)</p>
+            <ul class="materials-list" data-unit="3"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="talent-row">
+        <div class="talent-node">⚙️</div>
+        <div class="talent-card">
+          <span class="unit-tag">UNIDAD IV</span>
+          <h3 data-editable="u4-title">Transacciones y propiedades ACID</h3>
+          <p data-editable="u4-desc" data-editable-multiline="true">Integridad y consistencia de los datos frente a operaciones concurrentes.</p>
+          <ul>
+            <li>Atomicidad, consistencia, aislamiento, durabilidad</li>
+            <li>Control de concurrencia</li>
+            <li>Procedimientos almacenados y triggers</li>
+          </ul>
+          <div class="materials-block">
+            <p class="materials-title">📁 Materiales (PDF)</p>
+            <ul class="materials-list" data-unit="4"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="talent-row">
+        <div class="talent-node">🛡️</div>
+        <div class="talent-card">
+          <span class="unit-tag">UNIDAD V</span>
+          <h3 data-editable="u5-title">Administración y respaldo</h3>
+          <p data-editable="u5-desc" data-editable-multiline="true">Gestión, seguridad y continuidad de la base de datos en producción.</p>
+          <ul>
+            <li>Roles, permisos y usuarios</li>
+            <li>Backups y recuperación ante fallos</li>
+            <li>Buenas prácticas de rendimiento</li>
+          </ul>
+          <div class="materials-block">
+            <p class="materials-title">📁 Materiales (PDF)</p>
+            <ul class="materials-list" data-unit="5"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><b>Aguirre Osores Piero</b> · Base de Datos II</p>
+    <p>Ingeniería de Sistemas y Computación — Universidad Peruana Los Andes, Huancayo</p>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/script.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/materiales.js"></script>
+<script src="js/unidades.js"></script>
+</body>
+</html>

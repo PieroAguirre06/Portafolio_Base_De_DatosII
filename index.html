@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base de Datos II · Aguirre Osores Piero</title>
+<meta name="description" content="Portafolio del curso Base de Datos II — Ingeniería de Sistemas, tema Dota 2.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">UPLA · BD II<span>Ing. de Sistemas y Computación</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="sobreMi.html">Sobre mí</a>
+      <a href="unidades.html">Unidades</a>
+      <a href="login.html">Mi cuenta</a>
+      <span class="role-badge" id="roleBadge"></span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow" data-editable="hero-eyebrow">Ingeniería de Sistemas y Computación — UPLA</p>
+      <h1 data-editable="hero-title">Base de Datos II <br><em>ruta hacia el Ancient</em></h1>
+      <p class="hero-name" data-editable="hero-name">Aguirre Osores Piero</p>
+      <p class="lead" data-editable="hero-lead" data-editable-multiline="true">Este es mi portafolio del curso Base de Datos II: aquí reúno mis trabajos, el material de cada unidad y una campaña jugable —ambientada en Dota 2— que resume el recorrido del curso, desde el modelo entidad-relación hasta la administración de bases de datos.</p>
+      <div class="btn-row">
+        <a href="unidades.html" class="btn btn-primary">Ver unidades</a>
+        <a href="#juego" class="btn btn-ghost">🎮 Jugar</a>
+      </div>
+    </div>
+    <div class="ancient-card">
+      <div class="ancient-visual">
+        <svg class="hero-silhouette" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="heroGlow" cx="50%" cy="34%" r="55%">
+              <stop offset="0%" stop-color="#E7C67B" stop-opacity=".5"/>
+              <stop offset="100%" stop-color="#E7C67B" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="100" cy="78" r="72" fill="url(#heroGlow)"/>
+          <g fill="#241d13" stroke="#C9A15D" stroke-width="2" stroke-linejoin="round">
+            <path d="M100 38 C87 38 78 48 78 61 C78 72 85 79 92 83 L86 93 C68 99 57 114 55 137 L55 172 L145 172 L145 137 C143 114 132 99 114 93 L108 83 C115 79 122 72 122 61 C122 48 113 38 100 38 Z"/>
+            <path d="M55 137 L30 108 L40 96 L64 122 Z"/>
+            <path d="M145 137 L168 92 L178 100 L154 144 Z"/>
+            <line x1="168" y1="92" x2="182" y2="50" stroke="#C9A15D" stroke-width="3"/>
+          </g>
+        </svg>
+        <span class="glyph">🌳</span>
+      </div>
+      <div class="ancient-meta">
+        <span>Héroe<br><b>Aguirre Osores Piero</b></span>
+        <span>Curso<br><b>BD II</b></span>
+        <span>Sede<br><b>Huancayo</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="juego">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-editable="game-eyebrow">Minijuego</p>
+      <h2 data-editable="game-title">Escolta al courier hasta el Ancient</h2>
+      <p data-editable="game-desc" data-editable-multiline="true">Muévete con las flechas o A/D, esquiva a los creeps y sube por las líneas del mapa. Cada línea alcanzada desbloquea una unidad del curso.</p>
+    </div>
+
+    <div class="game-wrap">
+      <canvas id="gameCanvas" width="700" height="440"></canvas>
+      <div class="game-side">
+        <h3 data-editable="game-side-title">Estado de la partida</h3>
+        <p data-editable="game-side-desc" data-editable-multiline="true">Tienes 3 vidas. Si un creep te golpea, pierdes una. Llega a la línea del Ancient para ganar.</p>
+        <div class="hud">
+          <span>❤️ <b id="lives">3</b></span>
+          <span>🧭 Línea <b id="floor">0</b>/5</span>
+        </div>
+        <button class="btn btn-primary" id="startBtn" style="width:100%;">▶ Iniciar</button>
+        <ul id="floorList">
+          <li data-floor="1">Línea 1 — Modelo Entidad-Relación</li>
+          <li data-floor="2">Línea 2 — Normalización</li>
+          <li data-floor="3">Línea 3 — SQL avanzado</li>
+          <li data-floor="4">Línea 4 — Transacciones y ACID</li>
+          <li data-floor="5">Línea 5 — Administración y respaldo</li>
+        </ul>
+        <div class="controls-hint">
+          <span class="key">◀</span><span class="key">▶</span><span class="key">▲</span><span class="key">▼</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><b>Aguirre Osores Piero</b> · Base de Datos II</p>
+    <p>Ingeniería de Sistemas y Computación — Universidad Peruana Los Andes, Huancayo</p>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/script.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
