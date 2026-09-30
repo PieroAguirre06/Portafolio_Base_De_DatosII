@@ -72,7 +72,7 @@ const MATERIALES_BASE = {
       titulo: 'Semana 3',
       subtitulo: 'Características, impacto y motores de BD',
       descripcion: 'Características de las BD y los DBMS, impacto organizacional, y comparativa de los principales motores del mercado.',
-      temas: ['Características de BD', 'Impacto organizacional', 'Motores: MySQL, PostgreSQL, Oracle, SQL Server, MongoDB'],
+      temas: ['Características de BD', 'Impacto organizacional', 'Motores'],
       actividades: [
         {
           nombre: 'Actividad 1',
@@ -104,7 +104,13 @@ const MATERIALES_BASE = {
         {
           nombre: 'Actividad 1',
           archivos: [
-            { nombre: 'Manual SQL Server', ruta: 'assets/pdfs/manual-sql-server.pdf' }
+            { nombre: 'Cadena Editorial (SQL)', ruta: 'assets/sql/cadena_editorial.sql' }
+          ]
+        },
+        {
+          nombre: 'Actividad 2',
+          archivos: [
+            { nombre: 'Cadena Editorial - Preguntas', ruta: 'assets/pdfs/cadena_editorial_preguntas.pdf' }
           ]
         }
       ]
