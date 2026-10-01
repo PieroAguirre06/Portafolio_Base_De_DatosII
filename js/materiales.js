@@ -1,7 +1,7 @@
 // materiales.js — datos de cada SEMANA.
 // Cada semana tiene ACTIVIDADES, y dentro de cada actividad, ARCHIVOS.
 //
-// Soporta: .pdf, .html y .sql (el visor detecta el tipo automáticamente).
+// Soporta: .pdf, .html, .sql, .png, .jpg, .jpeg, .webp (el visor detecta el tipo automáticamente).
 
 const MATERIALES_BASE = {
   1: [
@@ -111,6 +111,31 @@ const MATERIALES_BASE = {
           nombre: 'Actividad 2',
           archivos: [
             { nombre: 'Cadena Editorial - Preguntas', ruta: 'assets/pdfs/cadena_editorial_preguntas.pdf' }
+          ]
+        },
+        {
+          nombre: 'Actividad 3',
+          archivos: [
+            { nombre: 'Pregunta 1',  ruta: 'assets/pregunta_1.png' },
+            { nombre: 'Pregunta 2',  ruta: 'assets/pregunta_2.png' },
+            { nombre: 'Pregunta 3',  ruta: 'assets/pregunta_3.png' },
+            { nombre: 'Pregunta 4',  ruta: 'assets/pregunta_4.png' },
+            { nombre: 'Pregunta 5',  ruta: 'assets/pregunta_5.png' },
+            { nombre: 'Pregunta 6',  ruta: 'assets/pregunta_6.png' },
+            { nombre: 'Pregunta 7',  ruta: 'assets/pregunta_7.png' },
+            { nombre: 'Pregunta 8',  ruta: 'assets/pregunta_8.png' },
+            { nombre: 'Pregunta 9',  ruta: 'assets/pregunta_9.png' },
+            { nombre: 'Pregunta 10', ruta: 'assets/pregunta_10.png' },
+            { nombre: 'Pregunta 11', ruta: 'assets/pregunta_11.png' },
+            { nombre: 'Pregunta 12', ruta: 'assets/pregunta_12.png' },
+            { nombre: 'Pregunta 13', ruta: 'assets/pregunta_13.png' },
+            { nombre: 'Pregunta 14', ruta: 'assets/pregunta_14.png' },
+            { nombre: 'Pregunta 15', ruta: 'assets/pregunta_15.png' },
+            { nombre: 'Pregunta 16', ruta: 'assets/pregunta_16.png' },
+            { nombre: 'Pregunta 17', ruta: 'assets/pregunta_17.png' },
+            { nombre: 'Pregunta 18', ruta: 'assets/pregunta_18.png' },
+            { nombre: 'Pregunta 19', ruta: 'assets/pregunta_19.png' },
+            { nombre: 'Pregunta 20', ruta: 'assets/pregunta_20.png' }
           ]
         }
       ]
