@@ -1,5 +1,4 @@
-// semana.js — carga la semana y permite edición de actividades/archivos (solo Admin).
-// La barra admin la maneja js/admin.js
+// semana.js — carga la semana y muestra archivos (PDF, HTML, SQL, IMÁGENES).
 
 (function () {
   'use strict';
@@ -64,7 +63,6 @@
     setText('weekSubtitle', semanaActual.subtitulo || '');
     setText('weekDescription', semanaActual.descripcion || '');
 
-    // Temas
     const ul = document.getElementById('weekTopics');
     if (ul) {
       ul.innerHTML = '';
@@ -89,7 +87,6 @@
       if (esAdmin()) addTemaAddButton(ul);
     }
 
-    // Título, subtítulo y descripción editables
     [
       { id: 'weekTitle',       field: 'titulo' },
       { id: 'weekSubtitle',    field: 'subtitulo' },
@@ -160,9 +157,6 @@
             guardarDatos();
           }
         });
-        nameSpan.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter') { e.preventDefault(); nameSpan.blur(); }
-        });
       }
 
       const countSpan = document.createElement('span');
@@ -178,7 +172,6 @@
         const del = document.createElement('button');
         del.type = 'button';
         del.className = 'mini-btn danger';
-        del.title = 'Eliminar actividad';
         del.textContent = '✕';
         del.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -202,7 +195,11 @@
         btn.className = 'file-btn';
 
         const ext  = getExt(file.ruta);
-        const icon = ext === 'pdf' ? '📕' : ext === 'html' ? '🌐' : ext === 'sql' ? '🗄️' : '📄';
+        const icon = ext === 'pdf' ? '📕'
+                    : ext === 'html' || ext === 'htm' ? '🌐'
+                    : ext === 'sql' ? '🗄️'
+                    : (ext === 'png' || ext === 'jpg' || ext === 'jpeg' || ext === 'webp' || ext === 'gif') ? '🖼️'
+                    : '📄';
         btn.innerHTML = '<span class="file-icon">' + icon + '</span> <span class="file-name-text">' + file.nombre + '</span>';
 
         btn.addEventListener('click', (e) => {
@@ -215,27 +212,9 @@
         li.appendChild(btn);
 
         if (esAdmin()) {
-          const edit = document.createElement('button');
-          edit.type = 'button';
-          edit.className = 'mini-btn';
-          edit.title = 'Editar';
-          edit.textContent = '✏️';
-          edit.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const nn = prompt('Nombre:', file.nombre);
-            if (nn === null) return;
-            const nr = prompt('Ruta:', file.ruta);
-            if (nr === null) return;
-            file.nombre = nn.trim() || file.nombre;
-            file.ruta = nr.trim() || file.ruta;
-            guardarDatos();
-            render();
-          });
-
           const del = document.createElement('button');
           del.type = 'button';
           del.className = 'mini-btn danger';
-          del.title = 'Eliminar';
           del.textContent = '✕';
           del.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -244,8 +223,6 @@
             guardarDatos();
             render();
           });
-
-          li.appendChild(edit);
           li.appendChild(del);
         }
 
@@ -350,6 +327,7 @@
     if (ext === 'pdf') renderPdf(viewer, status, pdfHint, archivo, file.nombre);
     else if (ext === 'html' || ext === 'htm') renderHtml(viewer, status, pdfHint, archivo);
     else if (ext === 'sql') renderSql(viewer, status, pdfHint, archivo);
+    else if (ext === 'png' || ext === 'jpg' || ext === 'jpeg' || ext === 'webp' || ext === 'gif') renderImage(viewer, status, pdfHint, archivo, file.nombre);
     else renderGeneric(viewer, status, pdfHint, archivo);
   }
 
@@ -397,6 +375,34 @@
         });
       })
       .catch(() => showMissing(viewer, status, pdfHint, archivo));
+  }
+
+  // ---------- IMAGEN ----------
+  function renderImage(viewer, status, pdfHint, archivo, nombre) {
+    viewer.innerHTML = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'image-viewer';
+
+    const img = document.createElement('img');
+    img.src = archivo;
+    img.alt = nombre;
+    img.className = 'preview-image';
+    img.loading = 'lazy';
+
+    img.onload = function() {
+      status.textContent = '🖼️ Imagen cargada';
+      status.style.color = '#bfe6b8';
+      pdfHint.innerHTML =
+        '<a href="' + archivo + '" download class="pdf-download">⬇ Descargar</a>' +
+        ' · <a href="' + archivo + '" target="_blank" rel="noopener" class="pdf-download">↗ Abrir en pestaña nueva</a>';
+    };
+
+    img.onerror = function() {
+      showMissing(viewer, status, pdfHint, archivo);
+    };
+
+    wrap.appendChild(img);
+    viewer.appendChild(wrap);
   }
 
   function renderGeneric(viewer, status, pdfHint, archivo) {
