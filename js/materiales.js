@@ -300,49 +300,59 @@ const MATERIALES_BASE = {
   5: [
     {
       titulo: 'Semana 1',
-      subtitulo: 'Roles y permisos',
-      descripcion: 'Gestión de accesos.',
-      temas: ['CREATE USER', 'GRANT y REVOKE'],
+      subtitulo: 'Administración en Azure (Parte 1)',
+      descripcion: 'Creación de cuenta en Azure y gestión inicial.',
+      temas: ['Creación de cuenta Azure', 'Portal de Azure', 'Configuración inicial'],
       actividades: [
-        { nombre: 'Actividad 1', archivos: [
-          { nombre: 'Teoría Seguridad', ruta: 'assets/pdfs/u5-s1-teoria.pdf' }
-        ]}
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Manual: Creación de cuenta en Azure', ruta: 'assets/pdfs/manual_creacion_cuenta_azure.pdf' }
+          ]
+        }
       ]
     },
     {
       titulo: 'Semana 2',
-      subtitulo: 'Backups y recuperación',
-      descripcion: 'Estrategias de respaldo.',
-      temas: ['Backup completo', 'Incremental', 'Restauración'],
+      subtitulo: 'Creación de BD en Azure',
+      descripcion: 'Creación de la base de datos Grados y Títulos en la nube.',
+      temas: ['Azure SQL Database', 'Servidores en Azure', 'Configuración de BD'],
       actividades: [
-        { nombre: 'Actividad 1', archivos: [
-          { nombre: 'Teoría Backups', ruta: 'assets/pdfs/u5-s2-teoria.pdf' }
-        ]}
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Manual: Creación de BD Grados y Títulos', ruta: 'assets/pdfs/manual_creacion_bd_grados_titulos.pdf' }
+          ]
+        }
       ]
     },
     {
       titulo: 'Semana 3',
-      subtitulo: 'Optimización de rendimiento',
-      descripcion: 'Planes de ejecución y tuning.',
-      temas: ['EXPLAIN', 'Estadísticas', 'Reindexado'],
+      subtitulo: 'Tablas y Código SQL',
+      descripcion: 'Script SQL de la base de datos y creación de tablas en Azure.',
+      temas: ['Script SQL', 'Creación de tablas', 'Ejecución en Azure'],
       actividades: [
-        { nombre: 'Actividad 1', archivos: [
-          { nombre: 'Teoría Optimización', ruta: 'assets/pdfs/u5-s3-teoria.pdf' }
-        ]}
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Código SQL: Grados y Títulos', ruta: 'assets/sql/codigo_grados_titulos.sql' },
+            { nombre: 'Creación de Tablas en Azure', ruta: 'assets/pdfs/creacion_tablas_azure.pdf' }
+          ]
+        }
       ]
     },
     {
       titulo: 'Semana 4',
-      subtitulo: 'Buenas prácticas finales',
-      descripcion: 'Cierre del curso.',
-      temas: ['Checklist', 'Documentación', 'Proyecto final'],
+      subtitulo: 'Conexión desde SSMS',
+      descripcion: 'Conexión a la base de datos de Azure usando SQL Server Management Studio.',
+      temas: ['SSMS', 'Conexión Azure', 'Firewall y accesos'],
       actividades: [
-        { nombre: 'Actividad 1', archivos: [
-          { nombre: 'Checklist final', ruta: 'assets/pdfs/u5-s4-checklist.pdf' }
-        ]},
-        { nombre: 'Actividad 2', archivos: [
-          { nombre: 'Proyecto final', ruta: 'assets/pdfs/u5-s4-proyecto.pdf' }
-        ]}
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Manual: Entrar a Azure desde SSMS', ruta: 'assets/pdfs/manual_entre_azure_ssms.pdf' }
+          ]
+        }
       ]
     }
   ]
