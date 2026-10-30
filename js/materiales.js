@@ -187,7 +187,7 @@ const MATERIALES_BASE = {
         {
           nombre: 'Actividad 2',
           archivos: [
-            { nombre: 'Script de Ejecución y Resultado', ruta: 'assets/pdfs/scrip_ejecucion_resultado.pdf' }
+            { nombre: 'Script de Ejecución y Resultado', ruta: 'assets/pdfs/script_ejecucion_resultado.pdf' }
           ]
         },
         {
