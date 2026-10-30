@@ -175,23 +175,86 @@ const MATERIALES_BASE = {
     {
       titulo: 'Semana 6',
       subtitulo: 'Dependencias funcionales',
-      descripcion: 'Introducción a las dependencias funcionales.',
-      temas: ['Dependencia funcional', 'Dependencia parcial', 'Dependencia transitiva'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría Dependencias', ruta: 'assets/pdfs/u2-s1-teoria.pdf' }] }]
+      descripcion: 'Portafolio de ejercicios, scripts y desarrollo de infografías.',
+      temas: ['Dependencias funcionales', 'Ejercicios prácticos', 'Infografías'],
+      actividades: [
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Portafolio de Ejercicios', ruta: 'assets/pdfs/portafolio_ejercicios.pdf' }
+          ]
+        },
+        {
+          nombre: 'Actividad 2',
+          archivos: [
+            { nombre: 'Script de Ejecución y Resultado', ruta: 'assets/pdfs/scrip_ejecucion_resultado.pdf' }
+          ]
+        },
+        {
+          nombre: 'Actividad 3',
+          archivos: [
+            { nombre: 'Infografía 01', ruta: 'assets/img/infografia_01.png' },
+            { nombre: 'Infografía 02', ruta: 'assets/img/infografia_02.png' },
+            { nombre: 'Infografía 03', ruta: 'assets/img/infografia_03.png' },
+            { nombre: 'Infografía 04', ruta: 'assets/img/infografia_04.png' },
+            { nombre: 'Infografía 05', ruta: 'assets/img/infografia_05.png' },
+            { nombre: 'Infografía 06', ruta: 'assets/img/infografia_06.png' },
+            { nombre: 'Infografía 07', ruta: 'assets/img/infografia_07.png' },
+            { nombre: 'Infografía 08', ruta: 'assets/img/infografia_08.png' },
+            { nombre: 'Infografía 09', ruta: 'assets/img/infografia_09.png' },
+            { nombre: 'Infografía 10', ruta: 'assets/img/infografia_10.png' }
+          ]
+        }
+      ]
     },
     {
       titulo: 'Semana 7',
       subtitulo: 'Primera Forma Normal (1FN)',
-      descripcion: 'Eliminar valores multivaluados y repetidos.',
-      temas: ['Atributos atómicos', 'Grupos repetitivos', 'Ejercicios de 1FN'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría 1FN', ruta: 'assets/pdfs/u2-s2-teoria.pdf' }] }]
+      descripcion: 'Informe de laboratorio y desarrollo de infografías.',
+      temas: ['Informe', 'Infografías', 'Casos prácticos'],
+      actividades: [
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Informe de Laboratorio', ruta: 'assets/pdfs/informe_laboratorio.pdf' }
+          ]
+        },
+        {
+          nombre: 'Actividad 2',
+          archivos: [
+            { nombre: 'Infografía 1', ruta: 'assets/img/infografia_1.png' },
+            { nombre: 'Infografía 2', ruta: 'assets/img/infografia_2.png' },
+            { nombre: 'Infografía 3', ruta: 'assets/img/infografia_3.png' },
+            { nombre: 'Infografía 4', ruta: 'assets/img/infografia_4.png' }
+          ]
+        }
+      ]
     },
     {
       titulo: 'Semana 8',
       subtitulo: 'Tercera Forma Normal (3FN)',
-      descripcion: 'Eliminar dependencias transitivas.',
-      temas: ['Dependencia transitiva', 'Casos prácticos'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría 3FN', ruta: 'assets/pdfs/u2-s4-teoria.pdf' }] }]
+      descripcion: 'Esquemas, índices en Azure SQL y desarrollo de infografías.',
+      temas: ['Esquemas SQL', 'Índices', 'Infografías'],
+      actividades: [
+        {
+          nombre: 'Actividad 1',
+          archivos: [
+            { nombre: 'Esquemas e Índices en Azure SQL', ruta: 'assets/pdfs/esquemas_indices_azure_sql.pdf' }
+          ]
+        },
+        {
+          nombre: 'Actividad 2',
+          archivos: [
+            { nombre: 'Infografía 01', ruta: 'assets/img/infografia01.png' },
+            { nombre: 'Infografía 02', ruta: 'assets/img/infografia02.png' },
+            { nombre: 'Infografía 03', ruta: 'assets/img/infografia03.png' },
+            { nombre: 'Infografía 04', ruta: 'assets/img/infografia04.png' },
+            { nombre: 'Infografía 05', ruta: 'assets/img/infografia05.png' },
+            { nombre: 'Infografía 06', ruta: 'assets/img/infografia06.png' },
+            { nombre: 'Infografía 07', ruta: 'assets/img/infografia07.png' }
+          ]
+        }
+      ]
     }
   ],
   3: [
