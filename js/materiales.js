@@ -263,28 +263,68 @@ const MATERIALES_BASE = {
       subtitulo: 'Subconsultas',
       descripcion: 'Consultas anidadas.',
       temas: ['Subconsultas'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría', ruta: 'assets/pdfs/u3-s1-teoria.pdf' }] }]
+      actividades: [
+        { 
+          nombre: 'Actividad 1', 
+          archivos: [
+        { nombre: 'Modulo1', ruta: 'assets/pdfs/modulo1.pdf' },
+        { nombre: 'Modulo2', ruta: 'assets/pdfs/modulo2.pdf' },
+        { nombre: 'Modulo3', ruta: 'assets/pdfs/modulo3.pdf' }
+
+      ] 
+    }
+  ]
     },
     {
       titulo: 'Semana 10',
       subtitulo: 'JOIN avanzados',
       descripcion: 'Múltiples tablas.',
       temas: ['JOIN'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría', ruta: 'assets/pdfs/u3-s2-teoria.pdf' }] }]
+      actividades: [
+        { 
+          nombre: 'Actividad 1', 
+          archivos: [
+            { nombre: 'Modulo 1', ruta: 'assets/pdfs/modulo_1.pdf' },
+            { nombre: 'Modulo 2', ruta: 'assets/pdfs/modulo_2.pdf' },
+            { nombre: 'Modulo 3', ruta: 'assets/pdfs/modulo_3.pdf' },
+            { nombre: 'Modulo 4', ruta: 'assets/pdfs/modulo_4.pdf' }
+          ] 
+        }
+      ]
     },
     {
       titulo: 'Semana 11',
       subtitulo: 'Funciones agregadas',
       descripcion: 'COUNT, SUM.',
       temas: ['Agregadas'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría', ruta: 'assets/pdfs/u3-s3-teoria.pdf' }] }]
+      actividades: [
+        { 
+          nombre: 'Actividad 1', 
+          archivos: [
+                        { nombre: 'Leccion 1', ruta: 'assets/pdfs/leccion_1.pdf' },
+            { nombre: 'Leccion 2', ruta: 'assets/pdfs/leccion_2.pdf' },
+            { nombre: 'Leccion 3', ruta: 'assets/pdfs/leccion_3.pdf' },
+            { nombre: 'Leccion 4', ruta: 'assets/pdfs/leccion_4.pdf' }
+          ] 
+        }
+      ]
     },
     {
       titulo: 'Semana 12',
       subtitulo: 'Vistas e índices',
       descripcion: 'Optimización.',
       temas: ['Vistas'],
-      actividades: [{ nombre: 'Actividad 1', archivos: [{ nombre: 'Teoría', ruta: 'assets/pdfs/u3-s4-teoria.pdf' }] }]
+      actividades: [
+        { 
+          ombre: 'Actividad 1', 
+          archivos: [
+            { nombre: 'Leccion1', ruta: 'assets/pdfs/leccion1.pdf' },
+            { nombre: 'Leccion2', ruta: 'assets/pdfs/leccion2.pdf' },
+            { nombre: 'Leccion3', ruta: 'assets/pdfs/leccion3.pdf' }
+      
+          ] 
+        }
+      ]
     }
   ],
   4: [
