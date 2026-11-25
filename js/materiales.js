@@ -320,7 +320,12 @@ const MATERIALES_BASE = {
           archivos: [
             { nombre: 'Leccion1', ruta: 'assets/pdfs/leccion1.pdf' },
             { nombre: 'Leccion2', ruta: 'assets/pdfs/leccion2.pdf' },
-            { nombre: 'Leccion3', ruta: 'assets/pdfs/leccion3.pdf' }
+            { nombre: 'Leccion3', ruta: 'assets/pdfs/leccion3.pdf' },
+            { nombre: 'Proyecto 1', ruta: 'assets/pdfs/proyecto_1.pdf'},
+            { nombre: 'Proyecto 2', ruta: 'assets/pdfs/proyecto_2.pdf' },
+            { nombre: 'Proyecto 3', ruta: 'assets/pdfs/proyecto_3.pdf' },
+            { nombre: 'Proyecto 4', ruta: 'assets/pdfs/proyecto_4.pdf' }
+
       
           ] 
         }
